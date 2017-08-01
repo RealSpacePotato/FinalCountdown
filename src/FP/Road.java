@@ -5,8 +5,8 @@ public class Road {
     private int         toID;   // the ID# of the destination node
     private int         weight; // weight assigned to edge
     private int         id;// unique id for this road
-    private int currentPop;
-    private int capacity;
+    private int         currentPop;
+    private int         capacity;
     
     public Road(int fromThisNodeID, int toThisNodeID, int withThisWeight, int theID) {
         this.fromID = fromThisNodeID;

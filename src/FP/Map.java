@@ -171,7 +171,7 @@ public class Map {
     public int nConnections(int id) throws ArrayIndexOutOfBoundsException {
         return villages.get(id).getRoadsOut().getSize();
     }
-}
+
 
 public MyList<Road> shortestPath(Village from, Village to) {
 			// just return null for stupid cases
