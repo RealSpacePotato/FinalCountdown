@@ -33,7 +33,7 @@ public class Gnome {
 	public int getID() {
 		return this.id;
 	}
-	
+	// return the VIP level. currently not used.
 	public int getVIPLevel() {
 		return this.vipLevel;
 	}
