@@ -42,6 +42,7 @@ public class Map {
     public int addVillage(String name) {
 		Village newVillage= new Village(name, nextVillageID++);
 		villages.add(newVillage);
+		System.out.println("HelloWorld Yo.");
 		return newVillage.getID();
 	}
 	
@@ -50,10 +51,11 @@ public class Map {
 	//remove all the roads that went through the village
 	public void removeVillage(int id){
 		Village removeMe = villages.get(id);
+		
+		/* here's a bunch of 
+		noew comments and i'm toing to delete some comments 
+		too you*/
 	
-		// remove roads out until you have no more. for each road out,
-		// you will need to remove the RoadOut entry for this Village,
-		// and the corresponding RoadIn entry for the Village on the
 		// destination end of the Road.
 		while (removeMe.getRoadsOut().getSize() > 0) {
 			Road roadOut = removeMe.getRoadsOut().get(0);
